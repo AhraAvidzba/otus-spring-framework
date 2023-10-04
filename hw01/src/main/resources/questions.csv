@@ -1,0 +1,6 @@
+id,question,answers
+1,What is IoC?,var1:var2:var3
+2,What is DI?,var1:var2:var3
+3,Tell main Principles of OOP,var1:var2:var3
+4,What benifits of using Interfaces in java?,var1:var2:var3
+5,What benifits of using Spring?,var1:var2:var3
