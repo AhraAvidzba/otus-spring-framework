@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns="http://www.springframework.org/schema/beans"
        xmlns:util="http://www.springframework.org/schema/util"
+       xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
@@ -13,7 +13,8 @@
     </bean>
 
     <bean id="testFileNameProvider" class="ru.otus.avidzba.config.AppConfig">
-        <constructor-arg index="0" value="/Users/aad/dev/SPRING.OTUS/spring-otus/hw01/src/main/resources/questions.csv"/>
+        <constructor-arg index="0"
+                         value="/Users/aad/dev/SPRING.OTUS/spring-otus/hw01/src/main/resources/questions.csv"/>
     </bean>
 
     <bean id="questionDao" class="ru.otus.avidzba.dao.CsvQuestionDao">

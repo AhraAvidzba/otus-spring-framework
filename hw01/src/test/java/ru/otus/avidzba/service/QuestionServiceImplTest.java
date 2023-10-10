@@ -1,17 +1,8 @@
 package ru.otus.avidzba.service;
 
-import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import ru.otus.avidzba.dao.CsvQuestionDao;
 import ru.otus.avidzba.dao.QuestionDao;
-import ru.otus.avidzba.domain.Question;
-import ru.otus.avidzba.domain.Question;
-
-import java.util.List;
-
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.core.IsEqual.equalTo;
-import static org.mockito.Mockito.when;
 
 class QuestionServiceImplTest {
     private final QuestionDao questionDao = Mockito.mock(CsvQuestionDao.class);
