@@ -1,6 +1,6 @@
 package ru.otus.avidzba.dao;
 
-import ru.otus.avidzba.model.Question;
+import ru.otus.avidzba.domain.Question;
 
 import java.util.List;
 
