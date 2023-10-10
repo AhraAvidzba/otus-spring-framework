@@ -14,7 +14,7 @@
 
     <bean id="testFileNameProvider" class="ru.otus.avidzba.config.AppConfig">
         <constructor-arg index="0"
-                         value="/Users/aad/dev/SPRING.OTUS/spring-otus/hw01/src/main/resources/questions.csv"/>
+                         value="hw01/src/main/resources/questions.csv"/>
     </bean>
 
     <bean id="questionDao" class="ru.otus.avidzba.dao.CsvQuestionDao">
