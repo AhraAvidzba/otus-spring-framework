@@ -54,7 +54,7 @@ public class StreamsIOService implements IOService {
                 }
                 return intValue;
             } catch (IllegalArgumentException e) {
-                printLine(errorMessage);
+                printStream.println(errorMessage);
             }
         }
         throw new IllegalArgumentException("Error during reading int value");
