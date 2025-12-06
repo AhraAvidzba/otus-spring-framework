@@ -11,6 +11,7 @@
 
     <modules>
         <module>hw01</module>
+        <module>hw02</module>
     </modules>
 
     <properties>
@@ -43,6 +44,13 @@
             <artifactId>spring-context</artifactId>
             <version>${spring.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>5.3.3</version>
+            <scope>${spring.version}</scope>
+        </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
