@@ -4,7 +4,7 @@ import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
-import ru.otus.avidzba.config.AppConfig;
+import ru.otus.avidzba.config.AppProperties;
 import ru.otus.avidzba.dao.CsvQuestionDao;
 import ru.otus.avidzba.domain.Question;
 
@@ -14,7 +14,7 @@ import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
 @RequiredArgsConstructor(onConstructor_ = @Autowired)
-@SpringJUnitConfig({AppConfig.class, CsvQuestionDao.class})
+@SpringJUnitConfig({AppProperties.class, CsvQuestionDao.class})
 class CsvQuestionDaoIT {
     private final CsvQuestionDao csvQuestionDao;
 
