@@ -1,10 +1,8 @@
 package ru.otus.avidzba.service;
 
-import lombok.RequiredArgsConstructor;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
-import ru.otus.avidzba.config.AppProperties;
+import org.springframework.boot.test.context.SpringBootTest;
 import ru.otus.avidzba.dao.CsvQuestionDao;
 import ru.otus.avidzba.domain.Question;
 
@@ -12,11 +10,10 @@ import java.util.List;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
-
-@RequiredArgsConstructor(onConstructor_ = @Autowired)
-@SpringJUnitConfig({AppProperties.class, CsvQuestionDao.class})
+@SpringBootTest
 class CsvQuestionDaoIT {
-    private final CsvQuestionDao csvQuestionDao;
+    @Autowired
+    private CsvQuestionDao csvQuestionDao;
 
     @Test
     void findAll_whenInvoke_returnAllQuestions() {
