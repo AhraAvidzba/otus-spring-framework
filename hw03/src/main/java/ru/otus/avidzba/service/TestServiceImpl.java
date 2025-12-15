@@ -11,14 +11,14 @@ import ru.otus.avidzba.domain.TestResult;
 @RequiredArgsConstructor
 public class TestServiceImpl implements TestService {
 
-    private final IOService ioService;
+    private final LocalizedIOService ioService;
 
     private final QuestionDao questionDao;
 
     @Override
     public TestResult executeTestFor(Student student) {
         ioService.printLine("");
-        ioService.printFormattedLine("Please answer the questions below%n");
+        ioService.printFormattedLineLocalized("TestService.answer.the.questions");
         var questions = questionDao.findAll();
         var testResult = new TestResult(student);
         for (var question : questions) {
