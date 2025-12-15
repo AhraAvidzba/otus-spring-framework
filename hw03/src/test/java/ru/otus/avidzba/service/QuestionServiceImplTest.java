@@ -18,7 +18,7 @@ import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.Mockito.when;
 
 class QuestionServiceImplTest {
-    private final IOService ioService = Mockito.mock(StreamsIOService.class);
+    private final LocalizedIOService ioService = Mockito.mock(LocalizedIOService.class);
     private final QuestionDao questionDao = Mockito.mock(CsvQuestionDao.class);
 
     private final TestServiceImpl questionService = new TestServiceImpl(ioService, questionDao);

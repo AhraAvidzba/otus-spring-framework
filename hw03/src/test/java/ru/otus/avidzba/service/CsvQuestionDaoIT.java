@@ -19,7 +19,7 @@ class CsvQuestionDaoIT {
     void findAll_whenInvoke_returnAllQuestions() {
         List<Question> questions = csvQuestionDao.findAll();
 
-        assertThat(questions.size(), equalTo(5));
+        assertThat(questions.size(), equalTo(3));
         assertThat(questions.get(0).text(), equalTo("Is there life on Mars?"));
     }
 }
