@@ -15,10 +15,17 @@
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>
-        <!-- Классический контекст Spring (ApplicationContext, ClassPathXmlApplicationContext и т.п.) -->
+        <!-- Само приложение -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
+        </dependency>
+
+        <!-- Всё, что нужно для тестов: JUnit 5, spring-test, Mockito, Hamcrest и т.п. -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 
