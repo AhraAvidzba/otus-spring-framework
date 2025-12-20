@@ -13,4 +13,12 @@
     <artifactId>hw01</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <dependencies>
+        <!-- Классический контекст Spring (ApplicationContext, ClassPathXmlApplicationContext и т.п.) -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+        </dependency>
+    </dependencies>
+
 </project>
