@@ -2,7 +2,11 @@ package ru.otus.avidzba.service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.shell.boot.JLineShellAutoConfiguration;
+import org.springframework.shell.boot.SpringShellAutoConfiguration;
+import org.springframework.shell.boot.StandardAPIAutoConfiguration;
 import ru.otus.avidzba.dao.CsvQuestionDao;
 import ru.otus.avidzba.domain.Question;
 
@@ -10,7 +14,13 @@ import java.util.List;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
-@SpringBootTest
+
+@SpringBootTest(properties = {
+        "spring.shell.interactive.enabled=false",
+        "spring.shell.noninteractive.enabled=false",
+        "spring.shell.script.enabled=false"
+})
+
 class CsvQuestionDaoIT {
     @Autowired
     private CsvQuestionDao csvQuestionDao;
