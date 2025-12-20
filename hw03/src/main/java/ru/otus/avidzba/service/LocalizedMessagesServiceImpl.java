@@ -10,6 +10,7 @@ import ru.otus.avidzba.config.LocaleConfig;
 public class LocalizedMessagesServiceImpl implements LocalizedMessagesService {
 
     private final MessageSource messageSource;
+
     private final LocaleConfig localeConfig;
 
     @Override
